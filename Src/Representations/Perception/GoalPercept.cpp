@@ -30,15 +30,15 @@ void GoalPercept::draw() const
       LINE("representation:GoalPercept:Field", p.positionOnField.x(), p.positionOnField.y(),
            p.positionOnField.x(), p.positionOnField.y() +
            (p.position == GoalPost::IS_LEFT ? -700 : 700),
-           60, Drawings::solidPen, goalPerceptColor);
+           60, Drawings::dottedPen, ColorRGBA::magenta);
       MID_DOT("representation:GoalPercept:Image", p.positionInImage.x(), p.positionInImage.y(),
               goalPerceptColor, color);
       LINE("representation:GoalPercept:Image", p.positionInImage.x(), p.positionInImage.y(), p.positionInImage.x(), 0,
-           5, Drawings::solidPen, goalPerceptColor);
-      if(p.position == GoalPost::IS_LEFT)
-        DRAWTEXT("representation:GoalPercept:Image", p.positionInImage.x() + 10, 40, 36, goalPerceptColor, "L");
-      else if(p.position == GoalPost::IS_RIGHT)
-        DRAWTEXT("representation:GoalPercept:Image", p.positionInImage.x() - 30, 40, 36, goalPerceptColor, "R");
+           5, Drawings::dottedPen, ColorRGBA::magenta);
+//      if(p.position == GoalPost::IS_LEFT)
+//        DRAWTEXT("representation:GoalPercept:Image", p.positionInImage.x() + 10, 40, 36, goalPerceptColor, "L");
+//      else if(p.position == GoalPost::IS_RIGHT)
+//        DRAWTEXT("representation:GoalPercept:Image", p.positionInImage.x() - 30, 40, 36, goalPerceptColor, "R");
     }
     else
     {

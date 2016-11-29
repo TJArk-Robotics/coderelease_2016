@@ -26,7 +26,8 @@ STREAMABLE(BallPercept,
     checkBallInImage,
     calculateBallOnField,
     checkBallOnField,
-    checkJersey,
+    checkColorPercent,
+    checkSVM,
   });
 
   /** Draws the ball*/
@@ -36,5 +37,5 @@ STREAMABLE(BallPercept,
   (float) radiusInImage,              /**< The radius of the ball in the current image */
   (Status)(notSeen) status,           /**< Indicates, if the ball was seen in the current image. */
   (Vector2f) relativePositionOnField, /**< Ball position relative to the robot. */
-  (float)(35) radiusOnField,          /**< The radius of the ball on the field in mm */
+  (float)(50) radiusOnField,          /**< The radius of the ball on the field in mm */
 });

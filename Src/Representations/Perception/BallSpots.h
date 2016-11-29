@@ -37,6 +37,9 @@ STREAMABLE(BallSpots,
       {
         CROSS("representation:BallSpots:Image", i->position.x(), i->position.y(), 2, 3, Drawings::solidPen, ColorRGBA::orange);
         CROSS("representation:BallSpots:Image", i->position.x(), i->position.y(), 2, 0, Drawings::solidPen, ColorRGBA::black);
+        DRAWTEXT("representation:BallSpots:Image", i->position.x(), i->position.y(), 10,
+                ColorRGBA::magenta, "("<<i->colorH<<","<<i->colorS<<")");
+
       }
     }
   },

@@ -19,7 +19,7 @@ void BallPercept::draw() const
   if(status == seen)
   {
     CIRCLE("representation:BallPercept:Image", positionInImage.x(), positionInImage.y(), radiusInImage, 1, // pen width
-           Drawings::solidPen,  ColorRGBA::black, Drawings::solidBrush, ColorRGBA(255, 128, 64, 100));
+           Drawings::solidPen,  ColorRGBA::red, Drawings::solidBrush, ColorRGBA(255, 128, 64, 210));
     CIRCLE("representation:BallPercept:Field", relativePositionOnField.x(), relativePositionOnField.y(), radiusOnField, 0, // pen width
            Drawings::solidPen, ColorRGBA::orange, Drawings::noBrush, ColorRGBA::orange);
     SPHERE3D("representation:BallPercept", relativePositionOnField.x(), relativePositionOnField.y(), radiusOnField, radiusOnField, ColorRGBA::orange);

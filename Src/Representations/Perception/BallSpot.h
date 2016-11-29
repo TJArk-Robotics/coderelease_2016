@@ -17,7 +17,12 @@ STREAMABLE(BallSpot,
 {
   BallSpot() = default;
   BallSpot(Vector2i pos) : position(pos) {};
-  BallSpot(int x, int y) : position(x, y) {},
+  BallSpot(int x, int y) : position(x, y) {}, 
 
   (Vector2i) position,
+  (float) shouldR,
+  (float) distance,
+  (int) colorH,
+  (int) colorS,
+  (int) colorY,
 });
